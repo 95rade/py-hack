@@ -23,6 +23,6 @@ def monitor ():
     print '-'*10
 while True:
     monitor()
-    time.sleep(10)
+    time.sleep(30)
     exit
 
