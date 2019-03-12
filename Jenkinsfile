@@ -18,7 +18,7 @@ node {
         
         // A sleep to make sure we actually get a real difference!
         stage "Sleeping"
-            sleep 10
+            sleep 5
 
         // And a final echo to show the time when we wrap up.
         stage "Second echo"
