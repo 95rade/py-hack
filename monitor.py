@@ -22,7 +22,7 @@ def monitor ():
             lat = float(bus.findtext('lat'))
             dis = distance(lat, office_lat)
             print (busid, dis, 'miles')
-    print '-'*10
+    print ('-'*10)
     
 abort_after = 60
 start = time.time()
