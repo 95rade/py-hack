@@ -1,4 +1,6 @@
 # monitor.py
+# Monitor buses movement in real time.
+#
 
 import time
 import urllib
@@ -21,8 +23,14 @@ def monitor ():
             dis = distance(lat, office_lat)
             print busid, dis, 'miles'
     print '-'*10
+    
+abort_after = 60
+start = time.time()
+
 while True:
     monitor()
-    time.sleep(25)
-    exit
+    time.sleep(5)
+    delta = time.time() - start
+    if delta >= abort_after:
+        break
 
