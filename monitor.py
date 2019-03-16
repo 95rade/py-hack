@@ -3,7 +3,7 @@
 #
 
 import time
-import urllib
+import urllib.request
 from xml.etree.ElementTree import parse
 
 candidates = ['1770', '1861', '1864', '1921']
@@ -14,7 +14,8 @@ def distance(lat1, lat2):
     return 69*abs(lat1-lat2)
 
 def monitor ():
-    u = urllib.urlopen('http://ctabustracker.com/bustime/map/getBusesForRoute.jsp?route=22')
+    u = urllib.request.urlopen('http://ctabustracker.com/bustime/map/getBusesForRoute.jsp?route=22')
+    #print (u.read())
     doc = parse(u)
     for bus in doc.findall('bus'):
         busid = bus.findtext('id')
