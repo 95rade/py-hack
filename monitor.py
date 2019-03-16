@@ -21,7 +21,7 @@ def monitor ():
         if busid in candidates:
             lat = float(bus.findtext('lat'))
             dis = distance(lat, office_lat)
-            print busid, dis, 'miles'
+            print (busid, dis, 'miles')
     print '-'*10
     
 abort_after = 60
