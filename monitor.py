@@ -30,7 +30,7 @@ start = time.time()
 
 while True:
     monitor()
-    #time.sleep(5)
+    time.sleep(5)
     delta = time.time() - start
     if delta >= abort_after:
         break
