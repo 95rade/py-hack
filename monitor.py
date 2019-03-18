@@ -25,7 +25,7 @@ def monitor ():
             print (busid, dis, 'miles')
     print ('-'*10)
     
-abort_after = 60
+abort_after = 30
 start = time.time()
 
 while True:
