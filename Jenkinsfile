@@ -1,4 +1,6 @@
 // This shows a simple build wrapper example, using the Timestamper plugin.
+// This Jenkinsfile is scanned on the github repo by Jenkins and executed every 
+// time there is a change in the repo or when Multibranch pipeline is started.
 node {
     echo "NODE_NAME = ${env.NODE_NAME}"
     //TODO: figure out how to 'delete workspace before each build'
